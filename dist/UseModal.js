@@ -12,7 +12,7 @@ var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/esm
 var _react = require("react");
 
 var UseModal = function UseModal() {
-  var _useState = (0, _react.useState)(true),
+  var _useState = (0, _react.useState)(false),
       _useState2 = (0, _slicedToArray2.default)(_useState, 2),
       isShowing = _useState2[0],
       setIsShowing = _useState2[1];

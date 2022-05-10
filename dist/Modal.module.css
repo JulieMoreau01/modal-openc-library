@@ -1,0 +1,100 @@
+
+
+:root {
+  --paddingModal       : 2rem;
+  --fontFamilyModal    : Arial, Helvetica, sans-serif;
+  --backgroundBehind   : rgba(0, 0, 0, 0.5);
+  --backgroundModal    : white;
+  --TitleTextColor     : black;
+  --TitleTextSize      : 20px;
+  --TilePaddingBottom  : 1.5rem;
+  --BodyTextColor      : #3b3b3b;
+  --BodyTextSize       : 14px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1040;
+}
+
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--backgroundBehind);
+}
+
+.modal {
+  position: relative;
+  font-family: var(--fontFamilyModal);
+  background: var(--backgroundModal);
+  z-index: 100;
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 80%;
+  padding: var(--paddingModal);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--TitleTextColor);
+  font-size: var(--TitleTextSize);
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: var(--TilePaddingBottom);
+}
+
+.modalBody {
+  color: var(--BodyTextColor);
+  font-size: var(--BodyTextSize);
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+button.modalToggle,
+input[type='submit'] {
+  background-color: turquoise;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border: none;
+}
+
+button.modalToggle:not(:first-child) {
+  margin-left: 10px;
+}
