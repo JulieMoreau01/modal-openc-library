@@ -1,6 +1,6 @@
 {
   "name": "modal-openc-library",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",

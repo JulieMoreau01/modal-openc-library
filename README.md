@@ -6,6 +6,8 @@ Run the following command:
 # Change Size
 Use size="small" for Max-Width = 500px
 Use size="big" for Maw-Width = 700px
+# Choose Title
+Use title="My Title example" for add a title to the modal.
 
 # Update CSS
 For updated CSS : Copy Paste the Modal.module.css on your project.
