@@ -6,10 +6,6 @@ import styles from "./lib/Modal.module.css"
 
 export default function App() {
   const { isShowing: isLoginFormShowed, toggle: toggleLoginForm } = UseModal();
-  const {
-    isShowing: isRegistrationFormShowed,
-    toggle: toggleRegistrationForm
-  } = UseModal();
 
   return (
     <>
@@ -23,6 +19,7 @@ export default function App() {
           isShowing={isLoginFormShowed}
           hide={toggleLoginForm}
           title="TEST EXEMPLE"
+          size="small"
         >
           <div className={styles.modalBody}>Je suis le contenu de la modal </div>
         </Modal>

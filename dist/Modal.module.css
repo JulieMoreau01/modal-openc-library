@@ -43,7 +43,15 @@
   background-color: var(--backgroundBehind);
 }
 
-.modal {
+.modalSmall{
+  max-width: 500px;
+}
+
+.modalBig  {
+  max-width: 700px;
+}
+
+.modalSmall, .modalBig {
   position: relative;
   font-family: var(--fontFamilyModal);
   background: var(--backgroundModal);
@@ -51,7 +59,6 @@
   position: relative;
   margin: auto;
   border-radius: 5px;
-  max-width: 500px;
   width: 80%;
   padding: var(--paddingModal);
 }

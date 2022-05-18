@@ -15,19 +15,20 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _ModalModule = _interopRequireDefault(require("./Modal.module.css"));
 
-var _excluded = ["isShowing", "hide", "title"];
+var _excluded = ["isShowing", "hide", "title", "size"];
 
 var Modal = function Modal(_ref) {
   var isShowing = _ref.isShowing,
       hide = _ref.hide,
       title = _ref.title,
+      size = _ref.size,
       props = (0, _objectWithoutProperties2.default)(_ref, _excluded);
   return isShowing ? /*#__PURE__*/_reactDom.default.createPortal( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: _ModalModule.default.modalOverlay
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: _ModalModule.default.modalWrapper
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: _ModalModule.default.modal
+    className: size === 'small' ? _ModalModule.default.modalSmall : _ModalModule.default.modalBig
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: _ModalModule.default.modalHeader
   }, /*#__PURE__*/_react.default.createElement("h4", null, title), /*#__PURE__*/_react.default.createElement("button", {

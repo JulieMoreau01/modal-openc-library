@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import styles from './Modal.module.css'
 
-const Modal = ({ isShowing, hide, title, ...props }) =>
+const Modal = ({ isShowing, hide, title, size, ...props }) =>
   isShowing
     ? ReactDOM.createPortal(
-        <>
-          <div className={styles.modalOverlay}>
+      <>
+        <div className={styles.modalOverlay}>
             <div className={styles.modalWrapper}>
-              <div className={styles.modal}>
+              <div className={size === 'small' ? styles.modalSmall : styles.modalBig}>
                 <div className={styles.modalHeader}>
                   <h4>{title}</h4>
                   <button
@@ -24,7 +24,8 @@ const Modal = ({ isShowing, hide, title, ...props }) =>
               </div>
             </div>
           </div>
-        </>,
+          </>
+        ,
         document.body
       )
     : null;
