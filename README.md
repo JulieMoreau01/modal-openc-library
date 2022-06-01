@@ -5,14 +5,14 @@ A library of React components created using `create-react-app`.
 Run the following command:
 `npm install modal-openc-library`
 
-# Change Size
+## Change Size
 Use size="small" for Max-Width = 500px
 Use size="big" for Maw-Width = 700px
 
-# Choose Title
+## Choose Title
 Use title="My Title example" for add a title to the modal.
 
-# Update CSS
+## Update CSS
 For updated CSS : Copy Paste the Modal.module.css on your project.
 Use variable for easy changes
   --paddingModal       : 2rem;
