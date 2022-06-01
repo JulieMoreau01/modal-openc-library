@@ -15,6 +15,7 @@ Use title="My Title example" for add a title to the modal.
 ## Update CSS
 For updated CSS : Copy Paste the Modal.module.css on your project.
 Use variable for easy changes
+
   --paddingModal       : 2rem;
   
   --fontFamilyModal    : Arial, Helvetica, sans-serif;
